@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 class Node:
     def __init__(self,data=None,prev=None,next=None):
         self.data = data
@@ -18,4 +16,3 @@ class DoubleLinkedList:
 if __name__ == '__main__':
     dli = DoubleLinkedList()
     
->>>>>>> 9507094 (edit)
