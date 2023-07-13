@@ -32,22 +32,6 @@ class DoubleLinkedlist:
         if(index == 0):self.insert_at_begining(data)
         if(index==self.get_length()):self.insert_at_end(data)
 
-
-        count = 0
-        itr = self.head
-
-        while itr.next:
-            if(count==index-1):
-                node = Node(data,itr.next,itr)
-                if node.next:
-                    node.next.prev = node
-                itr.next = node
-                break
-            count +=1
-            itr = itr.next
-        return
-
-
     def get_last_node(self):
         itr = self.head
         while itr.next:
@@ -60,7 +44,7 @@ class DoubleLinkedlist:
         while itr:
             count+=1
             itr = itr.next
-        return (count)    
+        print(count)    
 
     def print_from_begining(self):
         itr = self.head
@@ -91,8 +75,6 @@ if __name__=='__main__':
     dli.insert_at_begining(5)
     dli.insert_at_begining(6)
     dli.insert_at_end(7)
-    dli.insert_at_index(2,1)
-    dli.insert_at_index(3,2)
     dli.print_from_begining()
     dli.print_from_end()
     dli.get_length()

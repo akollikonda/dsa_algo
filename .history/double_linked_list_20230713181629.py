@@ -39,8 +39,6 @@ class DoubleLinkedlist:
         while itr.next:
             if(count==index-1):
                 node = Node(data,itr.next,itr)
-                if node.next:
-                    node.next.prev = node
                 itr.next = node
                 break
             count +=1
