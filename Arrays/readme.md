@@ -17,6 +17,6 @@ As mentioned before, a majority of algorithm problems will involve an array or s
 
 time complexity chart for arrays and strings
 
-![Alt text]('https://github.com/akollikonda/dsa_algo/blob/main/Arrays/src/time_complexity.png')
+![Alt text](https://github.com/akollikonda/dsa_algo/blob/main/Arrays/src/time_complexity.png)
 
 Appending to the end of a list is amortized O(1).
